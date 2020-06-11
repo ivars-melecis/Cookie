@@ -3,10 +3,10 @@
 <!-- vscode-markdown-toc -->
 
 1.  [Methods](#Methods)
-    1.1. [Fetch](#Fetch)
-    1.2. [Add](#Add)
-    1.3. [Get](#Get)
-    1.4. [Delete](#Delete)
+    _ 1.1. [Fetch](#Fetch)
+    _ 1.2. [Add](#Add)
+    _ 1.3. [Get](#Get)
+    _ 1.4. [Delete](#Delete)
 
 <!-- vscode-markdown-toc-config
 	numbering=true

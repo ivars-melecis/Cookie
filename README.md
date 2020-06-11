@@ -1,20 +1,6 @@
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 # Cookies
-
-<!-- vscode-markdown-toc -->
-
-1.  [Methods](#Methods)
-    _ 1.1. [Fetch](#Fetch)
-    _ 1.2. [Add](#Add)
-    _ 1.3. [Get](#Get)
-    _ 1.4. [Delete](#Delete)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
-
-<!-- TOC -->
 
 Simple class to make CRUD operations easier for cookies. Once class is initiated, its constructor calls function to fetch `document.cookie` and formats each cookie by name and value.
 
@@ -26,7 +12,7 @@ Default cookie string:
 
 Formatted version with **Cookie class**
 
-```
+```js
 [
  {name: "demo-cookie", content: "new content"}
  {name: "with-props", content: "my cookiewith props"}
@@ -35,11 +21,11 @@ Formatted version with **Cookie class**
 ]
 ```
 
-## Methods
+## 1. <a name='Methods'></a>Methods
 
 There are 4 methods within this class. **fetch**, **add**, **get**, **delete**. Update method was not created as we are able to modify any cookie by using **add** method, provided, you use the same cookie name.
 
-### Fetch
+### 1.1. <a name='Fetch'></a>Fetch
 
 Initialisation:
 
@@ -57,7 +43,7 @@ cookie.formatted = cookie.fetch();
 
 Above is useful only if you perform actions without page re-load and want to keep class data in sync.
 
-### Add
+### 1.2. <a name='Add'></a>Add
 
 Initialisation:
 
@@ -83,7 +69,7 @@ Argument 4 - empty string ( no extra flags )
 
 This method is also to be used to modify cookie. Simply use the same cookie name. **Re-fetching cookies is not required after adding. This is done internally.**
 
-### Get
+### 1.3. <a name='Get'></a>Get
 
 Initialisation:
 
@@ -105,7 +91,7 @@ Use `cookie.get('my-cookie').content` if only content is needed.
 
 Method will return `null` if cookie does not exist.
 
-### Delete
+### 1.4. <a name='Delete'></a>Delete
 
 Initialisation:
 
